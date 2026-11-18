@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="styles.css" />
   <script defer src="script.js"></script>
 </head>
-<body>
+<body class="bento-home">
   <a class="skip-link" href="#hauptinhalt">Zum Inhalt springen</a>
 
   <!-- Header -->
@@ -857,19 +857,22 @@
         </div>
 
         <div class="cta-banner reveal">
+          <svg class="cta-motif" viewBox="0 0 240 240" fill="none" aria-hidden="true">
+            <rect x="14" y="14" width="212" height="212" rx="48" stroke="currentColor" stroke-width="2.5" />
+            <rect x="32" y="32" width="82" height="82" rx="22" stroke="currentColor" stroke-width="2" />
+            <rect x="126" y="32" width="82" height="82" rx="22" stroke="currentColor" stroke-width="2" />
+            <rect x="32" y="126" width="82" height="82" rx="22" stroke="currentColor" stroke-width="2" />
+            <rect x="126" y="126" width="82" height="82" rx="22" stroke="currentColor" stroke-width="2" />
+          </svg>
           <div class="cta-banner-copy">
-            <h3 class="cta-banner-title">Bereit für Ihr nächstes Projekt?</h3>
-            <p class="cta-banner-text">
-              Schildern Sie uns kurz Ihr Vorhaben – wir melden uns unkompliziert und persönlich bei Ihnen.
-            </p>
-          </div>
-          <div class="cta-banner-actions">
-            <button class="btn btn-light" type="button" data-open-modal="contact" data-topic="dienstleistungen">
-              Kontakt aufnehmen
-            </button>
-            <a class="btn btn-ghost-light" href="mailto:kontakt@bentosoftware.com">
-              kontakt@bentosoftware.com
-            </a>
+            <img class="cta-icon" src="favicon.svg" width="66" height="66" alt="" />
+            <p class="cta-eyebrow">Bento Software UG · Herford</p>
+            <h3 class="cta-banner-title">Bereit für Ihr <em>nächstes Projekt?</em></h3>
+            <p class="cta-banner-text">Schildern Sie uns kurz Ihr Vorhaben – wir melden uns unkompliziert und persönlich bei Ihnen.</p>
+            <div class="cta-banner-actions">
+              <button class="btn cta-primary" type="button" data-open-modal="contact" data-topic="dienstleistungen">Kontakt aufnehmen <span aria-hidden="true">→</span></button>
+              <a class="btn cta-email" href="mailto:kontakt@bentosoftware.com">kontakt@bentosoftware.com</a>
+            </div>
           </div>
         </div>
       </div>
@@ -899,6 +902,7 @@
         </div>
       </div>
 
+      <p class="footer-word" aria-hidden="true">BENTO SOFTWARE</p>
       <div class="footer-bottom">
         <span>© 2026 Bento Software UG (haftungsbeschränkt). Alle Rechte vorbehalten.</span>
         <span>Hessestr. 12 · 32049 Herford</span>

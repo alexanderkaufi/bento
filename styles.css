@@ -1871,3 +1871,59 @@ ul {
     transition: none;
   }
 }
+
+
+/* Gestaltung der Startseite nach der Bento-Referenz */
+.bento-home { --bg: #f7f4ef; }
+.bento-home .site-header {
+  padding-top: calc(12px + env(safe-area-inset-top));
+  background: transparent; border: 0; box-shadow: none;
+  backdrop-filter: none; -webkit-backdrop-filter: none; pointer-events: none;
+}
+.bento-home .nav {
+  min-height: 58px; padding: 0 8px 0 14px; border-radius: 999px;
+  position: relative; pointer-events: auto;
+  transition: background-color .35s ease, box-shadow .35s ease;
+}
+.bento-home .site-header.is-scrolled .nav {
+  background: rgba(255,255,255,.82);
+  box-shadow: inset 0 0 0 1px rgba(21,20,25,.08), 0 12px 32px rgba(21,20,25,.09);
+  backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px);
+}
+.bento-home .hero {
+  background: radial-gradient(ellipse 55% 65% at 90% 20%, rgba(161,196,253,.25), transparent 65%), var(--bg);
+}
+.bento-home .cta-banner {
+  position: relative; overflow: hidden; display: block;
+  padding: clamp(34px, 6vw, 72px); border-radius: 42px; color: #151419;
+  background: radial-gradient(65% 90% at 100% 50%, rgba(11,110,245,.09), transparent 60%), radial-gradient(55% 80% at 0% 100%, rgba(23,121,75,.08), transparent 60%), #fff;
+  box-shadow: inset 0 0 0 1px rgba(21,20,25,.09), 0 36px 72px rgba(21,20,25,.07);
+}
+.bento-home .cta-banner-copy { max-width: 620px; position: relative; z-index: 1; }
+.bento-home .cta-icon { width: 66px; height: 66px; margin-bottom: 24px; border-radius: 17px; box-shadow: 0 14px 30px rgba(21,20,25,.16); }
+.bento-home .cta-eyebrow { display: flex; align-items: center; gap: 10px; margin: 0 0 16px; color: #66646e; font-size: .76rem; font-weight: 700; letter-spacing: .11em; text-transform: uppercase; }
+.bento-home .cta-eyebrow::before { content: ''; width: 22px; height: 6px; border-radius: 6px; background: linear-gradient(90deg,#0b6ef5,#5b3df5,#17794b,#d93829); }
+.bento-home .cta-banner-title { max-width: 620px; margin: 0 0 20px; font-size: clamp(2.3rem,4.5vw,3.6rem); font-weight: 800; line-height: 1.06; letter-spacing: -.055em; }
+.bento-home .cta-banner-title em { font-family: ui-serif, 'New York', 'Iowan Old Style', Georgia, serif; font-weight: 400; }
+.bento-home .cta-banner-text { margin-bottom: 30px; color: #66646e; font-size: 1.06rem; line-height: 1.6; }
+.bento-home .cta-motif { position: absolute; width: 440px; right: -130px; top: 50%; transform: translateY(-50%) rotate(-22deg); color: rgba(11,110,245,.09); pointer-events: none; }
+.bento-home .cta-primary { background: #111216; color: #fff; }
+.bento-home .cta-primary:hover { background: #000; }
+.bento-home .cta-primary span { margin-left: .7rem; }
+.bento-home .cta-email { color: #151419; border: 1px solid rgba(21,20,25,.18); background: rgba(255,255,255,.65); }
+.bento-home .cta-email:hover { background: #fff; }
+.bento-home .site-footer { background: #111216; color: #d2d0d6; border: 0; padding: 72px 0 28px; overflow: hidden; }
+.bento-home .footer-top { border: 0; padding: 0; }
+.bento-home .site-footer .brand-wordmark { color: #fff; }
+.bento-home .site-footer .brand-wordmark span, .bento-home .footer-tagline, .bento-home .footer-link { color: rgba(255,255,255,.72); }
+.bento-home .footer-link:hover { color: #fff; }
+.bento-home .footer-word { margin: 34px 0 8px; text-align: center; font-size: clamp(2.2rem,10.5vw,10.5rem); font-weight: 820; letter-spacing: -.06em; line-height: .92; background: linear-gradient(90deg,#0b6ef5,#5b3df5,#17794b,#d93829); -webkit-background-clip: text; background-clip: text; color: transparent; opacity: .17; white-space: nowrap; user-select: none; }
+.bento-home .footer-bottom { border-top: 1px solid rgba(255,255,255,.14); color: rgba(255,255,255,.65); padding-top: 22px; }
+@media (max-width: 767px) {
+  .bento-home .nav { padding-left: 10px; }
+  .bento-home .cta-banner { border-radius: 28px; }
+  .bento-home .cta-motif { width: 280px; right: -135px; opacity: .7; }
+  .bento-home .cta-banner-actions { align-items: stretch; }
+  .bento-home .cta-banner-actions .btn { justify-content: center; }
+  .bento-home .footer-word { font-size: clamp(2rem,10vw,5rem); }
+}
