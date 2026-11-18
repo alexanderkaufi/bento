@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f5f5f7" />
+  <meta
+    name="description"
+    content="WatchDial von Bento Software: Personalisierbare Vintage-Zifferblätter für die Apple Watch mit eigenem Text, Initialen, verschiedenen Schriftstilen und internationalen Ziffernsystemen."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="WatchDial für Apple Watch | Bento Software" />
+  <meta property="og:description" content="Klassische Vintage-Zifferblätter direkt auf der Apple Watch mit Namen, Initialen, Schriftstilen und Always-On-Anzeige personalisieren." />
+  <meta property="og:image" content="../assets/apps/watchdial/icon.jpg" />
+  <title>WatchDial für Apple Watch | Bento Software</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="../assets/apps/watchdial/icon.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="../assets/app-page.css" />
+  <script defer src="../script.js"></script>
+  <script defer src="../assets/app-page.js"></script>
+</head>
+<body class="app-theme--watch">
+  <a class="skip-link" href="#hauptinhalt">Zum Inhalt springen</a>
+
+  <header class="site-header" id="site-header">
+    <div class="container nav">
+      <div style="display: flex; align-items: center; gap: 0.9rem;">
+        <a class="brand" href="../index.html" aria-label="Bento Software Startseite">
+          <img class="brand-mark" src="../favicon.svg" width="34" height="34" alt="" />
+          <span class="brand-wordmark">
+            <strong>BENTO</strong><span>SOFTWARE</span>
+          </span>
+        </a>
+        <a class="app-back-link" href="../index.html#produkte">← Alle Apps</a>
+      </div>
+
+      <nav class="nav-links" aria-label="App-Navigation">
+        <a class="nav-item" href="#galerie">Zifferblätter</a>
+        <a class="nav-item" href="#funktionen">Funktionen</a>
+        <a class="nav-item" href="#details">Details</a>
+        <a class="nav-cta" href="https://apps.apple.com/de/app/watchdial/id6760660483" target="_blank" rel="noopener noreferrer">Im App Store</a>
+      </nav>
+
+      <button id="menu-toggle" class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Menü öffnen">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <div id="mobile-drawer" class="mobile-drawer" aria-hidden="true">
+    <a class="mobile-drawer-link" href="../index.html#produkte">← Alle Apps</a>
+    <a class="mobile-drawer-link" href="#galerie">Zifferblätter</a>
+    <a class="mobile-drawer-link" href="#funktionen">Funktionen</a>
+    <a class="mobile-drawer-link" href="#details">Technische Details</a>
+    <a class="mobile-drawer-link" href="https://apps.apple.com/de/app/watchdial/id6760660483" target="_blank" rel="noopener noreferrer">Im App Store laden</a>
+  </div>
+
+  <main id="hauptinhalt">
+    <section class="app-hero">
+      <div class="container app-hero-grid">
+        <div>
+          <div class="app-hero-identity">
+            <div class="app-hero-icon app-hero-icon--cover">
+              <img src="../assets/apps/watchdial/icon.jpg" alt="WatchDial App-Icon" />
+            </div>
+            <div>
+              <span class="app-hero-kicker">Apple Watch · Neu</span>
+              <h1 class="app-hero-title">WatchDial</h1>
+            </div>
+          </div>
+
+          <p class="app-hero-subtitle">
+            Klassische Vintage-Zifferblätter für Ihre Apple Watch: Wählen Sie aus verschiedenen Ziffernstilen und personalisieren Sie Ihr Zifferblatt direkt am Handgelenk mit Ihrem eigenen Text oder Ihren Initialen.
+          </p>
+
+          <div class="app-stats-bar" aria-label="App-Store-Eckdaten">
+            <div class="stat-chip">
+              <span class="stat-chip-stars" aria-hidden="true">★★★★★</span>
+              <span>5,0</span>
+              <span class="stat-chip-muted">(1 Bewertung)</span>
+            </div>
+            <div class="stat-chip">
+              <span>0,99 €</span>
+            </div>
+            <div class="stat-chip">
+              <span>Apple Watch</span>
+            </div>
+            <div class="stat-chip">
+              <span>Always-On-Ansicht</span>
+            </div>
+          </div>
+
+          <div class="app-hero-actions">
+            <a class="store-btn" href="https://apps.apple.com/de/app/watchdial/id6760660483" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 384 512" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.3 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.3zM34.4 0C59.4.5 86.6 15 103.8 32.7c15 15.5 29.8 40.5 25.4 64.9-28.2 1.2-56.5-13.8-74.3-33C37.5 48.2 22.3 22 26.6-1.5z" /></svg>
+              <span class="store-btn-copy">
+                <span class="store-btn-kicker">Laden im</span>
+                <span class="store-btn-label">App Store</span>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-device-stage">
+          <button
+            class="device-showcase-trigger"
+            type="button"
+            data-lightbox-src="../assets/apps/watchdial/watch-2.png"
+            data-lightbox-caption="Personalisiertes Vintage-Zifferblatt mit eigenem Namen direkt auf der Apple Watch"
+            aria-label="Vorschau vergrößern"
+          >
+            <div class="device-frame device-frame--watch">
+              <img src="../assets/apps/watchdial/watch-2.png" alt="WatchDial auf Apple Watch mit personalisiertem Schriftzug" />
+            </div>
+            <span class="zoom-hint-pill">Zum Vergrößern tippen</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Watch Dial Showcase Grid -->
+    <section id="galerie" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-heading-group">
+            <p class="section-eyebrow">Apple Watch Galerie</p>
+            <h2 class="section-title">Zifferblätter &amp; Schriftstile</h2>
+            <p class="section-subtitle">
+              Alle offiziellen App-Store-Ansichten direkt von der Apple Watch – klicken Sie auf eine Uhr für die Großansicht.
+            </p>
+          </div>
+        </div>
+
+        <div class="watch-grid" data-gallery-grid>
+          <figure class="watch-card reveal">
+            <button class="watch-thumb" type="button" data-lightbox-src="../assets/apps/watchdial/watch-2.png" data-lightbox-caption="Eigener Familienname, Initialen oder kurzes Wort direkt auf dem Vintage-Zifferblatt">
+              <img src="../assets/apps/watchdial/watch-2.png" alt="WatchDial mit individueller Inschrift" loading="lazy" />
+            </button>
+            <figcaption class="screenshot-caption">
+              <strong>Eigene Inschrift</strong>
+              Platzieren Sie Familiennamen, Initialen oder ein kurzes Wort auf dem Zifferblatt.
+            </figcaption>
+          </figure>
+
+          <figure class="watch-card reveal">
+            <button class="watch-thumb" type="button" data-lightbox-src="../assets/apps/watchdial/watch-7.png" data-lightbox-caption="Schriftstil-Auswahl direkt auf der Apple Watch mit Live-Vorschau (z. B. Elegant Italic oder Classic Serif)">
+              <img src="../assets/apps/watchdial/watch-7.png" alt="WatchDial Schriftarten Auswahl" loading="lazy" />
+            </button>
+            <figcaption class="screenshot-caption">
+              <strong>Schriftstil &amp; Vorschau</strong>
+              Verschiedene Schriftarten inklusive Größen- und Positionsanpassung.
+            </figcaption>
+          </figure>
+
+          <figure class="watch-card reveal">
+            <button class="watch-thumb" type="button" data-lightbox-src="../assets/apps/watchdial/watch-3.png" data-lightbox-caption="Zifferblatt mit vereinfachten chinesischen Ziffern und kontrastierender Zwölf">
+              <img src="../assets/apps/watchdial/watch-3.png" alt="WatchDial Chinesisch vereinfacht" loading="lazy" />
+            </button>
+            <figcaption class="screenshot-caption">
+              <strong>Chinesisch (vereinfacht)</strong>
+              Klassisches Zifferblatt mit feinen Zeigern und roter Zwölf.
+            </figcaption>
+          </figure>
+
+          <figure class="watch-card reveal">
+            <button class="watch-thumb" type="button" data-lightbox-src="../assets/apps/watchdial/watch-4.png" data-lightbox-caption="Zifferblatt mit traditionellen chinesischen Erdzweig-Zeichen">
+              <img src="../assets/apps/watchdial/watch-4.png" alt="WatchDial Chinesisch traditionell" loading="lazy" />
+            </button>
+            <figcaption class="screenshot-caption">
+              <strong>Traditionelle Zeichen</strong>
+              Zeitlose Gestaltung im klassischen Kaligrafie-Stil.
+            </figcaption>
+          </figure>
+
+          <figure class="watch-card reveal">
+            <button class="watch-thumb" type="button" data-lightbox-src="../assets/apps/watchdial/watch-5.png" data-lightbox-caption="Zifferblatt mit Thai-Ziffern und rotem Sekundenzeiger">
+              <img src="../assets/apps/watchdial/watch-5.png" alt="WatchDial Thai-Ziffern" loading="lazy" />
+            </button>
+            <figcaption class="screenshot-caption">
+              <strong>Thai-Ziffern</strong>
+              Markante Typografie mit flüssigem Sekundenzeiger.
+            </figcaption>
+          </figure>
+
+          <figure class="watch-card reveal">
+            <button class="watch-thumb" type="button" data-lightbox-src="../assets/apps/watchdial/watch-6.png" data-lightbox-caption="Zifferblatt mit Devanagari-Ziffern">
+              <img src="../assets/apps/watchdial/watch-6.png" alt="WatchDial Devanagari-Ziffern" loading="lazy" />
+            </button>
+            <figcaption class="screenshot-caption">
+              <strong>Devanagari-Ziffern</strong>
+              Ausdrucksstarke klassische Ziffernform für die Apple Watch.
+            </figcaption>
+          </figure>
+
+          <figure class="watch-card reveal">
+            <button class="watch-thumb" type="button" data-lightbox-src="../assets/apps/watchdial/watch-8.png" data-lightbox-caption="Zifferblatt mit ost-arabischen Ziffern">
+              <img src="../assets/apps/watchdial/watch-8.png" alt="WatchDial Arabische Ziffern" loading="lazy" />
+            </button>
+            <figcaption class="screenshot-caption">
+              <strong>Arabische Ziffern</strong>
+              Klares Vintage-Design mit roter Zwölf und feinen Kontrasten.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="funktionen" class="section" style="padding-top: 1rem;">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-heading-group">
+            <p class="section-eyebrow">Direkt auf der Apple Watch</p>
+            <h2 class="section-title">Personalisierung ohne Umwege</h2>
+            <p class="section-subtitle">
+              WatchDial wurde speziell für die direkte Bedienung auf der Apple Watch entworfen – klar, präzise und jederzeit anpassbar.
+            </p>
+          </div>
+        </div>
+
+        <div class="app-features-grid">
+          <article class="app-feature-card reveal">
+            <div class="app-feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="7" /><polyline points="12 9 12 12 13.5 13.5" /><path d="M16.51 17.35l-.35 3.83a2 2 0 0 1-2 1.82H9.83a2 2 0 0 1-2-1.82l-.35-3.83m.01-10.7.35-3.83A2 2 0 0 1 9.83 1h4.35a2 2 0 0 1 2 1.82l.35 3.83" /></svg>
+            </div>
+            <h3 class="app-feature-title">Mehrere Vintage-Zifferblätter</h3>
+            <p class="app-feature-text">
+              Wählen Sie aus verschiedenen klassischen Zifferblatt-Stilen – von europäischen Ziffern bis zu internationalen Schrifttraditionen – mit Live-Anzeige von Stunden-, Minuten- und Sekundenzeiger.
+            </p>
+          </article>
+
+          <article class="app-feature-card reveal">
+            <div class="app-feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7V4h16v3" /><path d="M9 20h6" /><path d="M12 4v16" /></svg>
+            </div>
+            <h3 class="app-feature-title">Eigener Text &amp; Schriftstil</h3>
+            <p class="app-feature-text">
+              Hinterlegen Sie Ihren Familiennamen, Ihre Initialen oder ein kurzes Wort direkt auf dem Zifferblatt. Schriftart, Größe und Textposition passen Sie mit direkter Vorschau präzise an.
+            </p>
+          </article>
+
+          <article class="app-feature-card reveal">
+            <div class="app-feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" /></svg>
+            </div>
+            <h3 class="app-feature-title">Always-On-Optimierung</h3>
+            <p class="app-feature-text">
+              Für den gedimmten Always-On-Zustand der Apple Watch bietet WatchDial automatisch eine aufgeräumte, ruhige Darstellung mit reduzierten Elementen.
+            </p>
+          </article>
+
+          <article class="app-feature-card app-feature-card--wide reveal">
+            <div class="app-feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9" /><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z" /></svg>
+            </div>
+            <h3 class="app-feature-title">So einfach gestalten Sie Ihr Zifferblatt</h3>
+            <ul class="app-feature-list">
+              <li><span class="app-feature-bullet"></span><span>Zifferblatt-Stil auswählen und Wunschtext oder Initialen eingeben</span></li>
+              <li><span class="app-feature-bullet"></span><span>Schriftart, Schriftgröße und exakte Position auf dem Zifferblatt justieren</span></li>
+              <li><span class="app-feature-bullet"></span><span>Alle Änderungen sofort in der Live-Vorschau sehen und jederzeit anpassen oder entfernen</span></li>
+            </ul>
+          </article>
+
+          <article class="app-feature-card reveal">
+            <div class="app-feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
+            </div>
+            <h3 class="app-feature-title">Aktuelles Update (v1.2)</h3>
+            <p class="app-feature-text">
+              Veröffentlicht am 28. März 2026 mit Detailverbesserungen und Feinschliff für die direkte Bedienung auf der Apple Watch.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Specs -->
+    <section id="details" class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="specs-card reveal">
+          <p class="section-eyebrow">App Store Spezifikationen</p>
+          <h2 class="section-title" style="font-size: clamp(1.5rem, 2.8vw, 2rem); margin-bottom: 1.5rem;">Informationen auf einen Blick</h2>
+
+          <div class="specs-grid">
+            <div class="spec-item">
+              <span class="spec-label">Anbieter</span>
+              <span class="spec-value">Bento Software UG</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Kategorie</span>
+              <span class="spec-value">Dienstprogramme &amp; Lifestyle</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Preis</span>
+              <span class="spec-value">0,99 €</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Bewertung</span>
+              <span class="spec-value">★ 5,0 (1 Bewertung)</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Aktuelle Version</span>
+              <span class="spec-value">1.2</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Dateigröße</span>
+              <span class="spec-value">7,5 MB</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Plattform</span>
+              <span class="spec-value">Apple Watch (ab iOS/watchOS 13.0)</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">App-Sprache</span>
+              <span class="spec-value">Englisch</span>
+            </div>
+          </div>
+
+          <div class="specs-links">
+            <a class="inline-link" href="../index.html#kontakt">Support &amp; Kontakt</a>
+            <a class="inline-link" href="../index.html#datenschutz">Datenschutzerklärung</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <h2 class="section-title" style="font-size: clamp(1.5rem, 2.5vw, 1.9rem); margin-bottom: 1.25rem;">Weitere Apps von Bento Software</h2>
+        <div class="more-apps-grid">
+          <a class="more-app-card" href="https://alexanderkaufi.github.io/Gymmix/" target="_blank" rel="noopener noreferrer">
+            <div class="more-app-icon"><img src="../assets/apps/gymmix/icon.jpg" alt="" loading="lazy" /></div>
+            <div class="more-app-meta">
+              <span>Fitness · iPhone &amp; Watch</span>
+              <strong>Gymmix Trainingsplan</strong>
+              <small>Zur Projektseite ↗</small>
+            </div>
+          </a>
+          <a class="more-app-card" href="https://alexanderkaufi.github.io/CardDisplay/#ablauf" target="_blank" rel="noopener noreferrer">
+            <div class="more-app-icon"><img src="../assets/apps/carddisplay/icon.jpg" alt="" loading="lazy" /></div>
+            <div class="more-app-meta">
+              <span>Business · iPhone</span>
+              <strong>CardDisplay</strong>
+              <small>Zur Produktseite ↗</small>
+            </div>
+          </a>
+          <a class="more-app-card" href="../cyclecontext/de/index.html">
+            <div class="more-app-icon"><img src="../assets/apps/cyclecontext/icon.jpg" alt="" loading="lazy" /></div>
+            <div class="more-app-meta">
+              <span>Gesundheit · iPhone &amp; iPad</span>
+              <strong>CycleContext</strong>
+              <small>Projektseite öffnen →</small>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <a class="brand" href="../index.html">
+            <img class="brand-mark" src="../favicon.svg" width="28" height="28" alt="" />
+            <span class="brand-wordmark"><strong>BENTO</strong><span>SOFTWARE</span></span>
+          </a>
+          <p class="footer-tagline">Software, die ihr Ziel erreicht.</p>
+        </div>
+        <div class="footer-links">
+          <a class="footer-link" href="../index.html#produkte">Alle Produkte</a>
+          <a class="footer-link" href="../index.html#dienstleistungen">Dienstleistungen</a>
+          <a class="footer-link" href="../index.html#kontakt">Kontakt &amp; Impressum</a>
+          <a class="footer-link" href="../index.html#datenschutz">Datenschutzerklärung</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Bento Software UG (haftungsbeschränkt). Alle Rechte vorbehalten.</span>
+        <span>Hessestr. 12 · 32049 Herford</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Screenshot-Vollansicht" aria-hidden="true">
+    <div class="lightbox-backdrop" data-close-lightbox></div>
+    <div class="lightbox-dialog">
+      <div class="lightbox-stage">
+        <button id="lightbox-prev" class="lightbox-btn lightbox-btn--nav lightbox-prev" type="button" aria-label="Vorheriges Bild">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6" /></svg>
+        </button>
+        <img id="lightbox-img" class="lightbox-img" src="" alt="" />
+        <button id="lightbox-next" class="lightbox-btn lightbox-btn--nav lightbox-next" type="button" aria-label="Nächstes Bild">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6" /></svg>
+        </button>
+        <button class="lightbox-btn lightbox-close" type="button" data-close-lightbox aria-label="Vollansicht schließen">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg>
+        </button>
+      </div>
+      <div class="lightbox-caption-bar">
+        <span id="lightbox-counter" class="lightbox-counter">1 / 7</span>
+        <span id="lightbox-caption"></span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

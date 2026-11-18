@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f5f5f7" />
+  <meta
+    name="description"
+    content="Gartenplaner fürs Gemüsebeet von Bento Software: Mischkultur-Infos, Aussaat- und Erntekalender sowie virtueller Beetplan für iPhone, iPad und Android."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Gartenplaner fürs Gemüsebeet | Bento Software" />
+  <meta property="og:description" content="Mischkultur-Infos, Aussaatkalender und virtueller Beetplan mit Pflanzabständen und Fruchtfolge-Hinweisen." />
+  <meta property="og:image" content="../assets/apps/gartenplaner/icon.jpg" />
+  <title>Gartenplaner fürs Gemüsebeet | Bento Software</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="../assets/apps/gartenplaner/icon.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="../assets/app-page.css" />
+  <script defer src="../script.js"></script>
+  <script defer src="../assets/app-page.js"></script>
+</head>
+<body class="app-theme--garden">
+  <a class="skip-link" href="#hauptinhalt">Zum Inhalt springen</a>
+
+  <header class="site-header" id="site-header">
+    <div class="container nav">
+      <div style="display: flex; align-items: center; gap: 0.9rem;">
+        <a class="brand" href="../index.html" aria-label="Bento Software Startseite">
+          <img class="brand-mark" src="../favicon.svg" width="34" height="34" alt="" />
+          <span class="brand-wordmark">
+            <strong>BENTO</strong><span>SOFTWARE</span>
+          </span>
+        </a>
+        <a class="app-back-link" href="../index.html#produkte">← Alle Apps</a>
+      </div>
+
+      <nav class="nav-links" aria-label="App-Navigation">
+        <a class="nav-item" href="#galerie">Galerie</a>
+        <a class="nav-item" href="#funktionen">Funktionen</a>
+        <a class="nav-item" href="#details">Details</a>
+        <a class="nav-cta" href="https://apps.apple.com/de/app/gartenplaner-f%C3%BCrs-gem%C3%BCsebeet/id1329927332" target="_blank" rel="noopener noreferrer">Im App Store</a>
+      </nav>
+
+      <button id="menu-toggle" class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Menü öffnen">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <div id="mobile-drawer" class="mobile-drawer" aria-hidden="true">
+    <a class="mobile-drawer-link" href="../index.html#produkte">← Alle Apps</a>
+    <a class="mobile-drawer-link" href="#galerie">Screenshots</a>
+    <a class="mobile-drawer-link" href="#funktionen">Funktionen</a>
+    <a class="mobile-drawer-link" href="#details">Technische Details</a>
+    <a class="mobile-drawer-link" href="https://apps.apple.com/de/app/gartenplaner-f%C3%BCrs-gem%C3%BCsebeet/id1329927332" target="_blank" rel="noopener noreferrer">Im App Store laden</a>
+  </div>
+
+  <main id="hauptinhalt">
+    <!-- App Hero -->
+    <section class="app-hero">
+      <div class="container app-hero-grid">
+        <div>
+          <div class="app-hero-identity">
+            <div class="app-hero-icon app-hero-icon--padded">
+              <img src="../assets/apps/gartenplaner/icon.jpg" alt="Gartenplaner App-Icon" />
+            </div>
+            <div>
+              <span class="app-hero-kicker">Garten &amp; Planung · Hauptprodukt</span>
+              <h1 class="app-hero-title">Gartenplaner fürs Gemüsebeet</h1>
+            </div>
+          </div>
+
+          <p class="app-hero-subtitle">
+            Wählen Sie passende Gemüsesorten für Ihr Beet schnell und übersichtlich aus – mit Mischkultur-Wissen, Aussaatkalender und virtuellem Beetplan inklusive Pflanzabständen.
+          </p>
+
+          <div class="app-stats-bar" aria-label="App-Store-Eckdaten">
+            <div class="stat-chip">
+              <span class="stat-chip-stars" aria-hidden="true">★★★★★</span>
+              <span>4,5</span>
+              <span class="stat-chip-muted">(2.968 Bewertungen)</span>
+            </div>
+            <div class="stat-chip">
+              <span>Gratis</span>
+              <span class="stat-chip-muted">In-App-Bonusfunktion</span>
+            </div>
+            <div class="stat-chip">
+              <span>iOS 15.0+ &amp; Android</span>
+            </div>
+            <div class="stat-chip">
+              <span>4 Sprachen</span>
+            </div>
+          </div>
+
+          <div class="app-hero-actions">
+            <a class="store-btn" href="https://apps.apple.com/de/app/gartenplaner-f%C3%BCrs-gem%C3%BCsebeet/id1329927332" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 384 512" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.3 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.3zM34.4 0C59.4.5 86.6 15 103.8 32.7c15 15.5 29.8 40.5 25.4 64.9-28.2 1.2-56.5-13.8-74.3-33C37.5 48.2 22.3 22 26.6-1.5z" /></svg>
+              <span class="store-btn-copy">
+                <span class="store-btn-kicker">Laden im</span>
+                <span class="store-btn-label">App Store</span>
+              </span>
+            </a>
+            <a class="store-btn store-btn--android" href="https://play.google.com/store/apps/details?id=com.bentosoftware.gartenplaner&referrer=utm_source%3Dwebsite%26utm_campaign%3Dwebsite" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 512 512" aria-hidden="true"><path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z" /></svg>
+              <span class="store-btn-copy">
+                <span class="store-btn-kicker">Jetzt bei</span>
+                <span class="store-btn-label">Google Play</span>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-device-stage">
+          <button
+            class="device-showcase-trigger"
+            type="button"
+            data-lightbox-src="../assets/apps/gartenplaner/iphone-2.png"
+            data-lightbox-caption="Virtueller Beetplan mit automatischer Anzeige von guten und schlechten Nachbarn sowie Pflanzabständen"
+            aria-label="Vorschau vergrößern"
+          >
+            <div class="device-frame">
+              <img src="../assets/apps/gartenplaner/iphone-2.png" alt="Gartenplaner virtueller Beetplan mit Grünkohl, Erbse und Tomate" />
+            </div>
+            <span class="zoom-hint-pill">Zum Vergrößern tippen</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="galerie" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-heading-group">
+            <p class="section-eyebrow">Einblicke in die App</p>
+            <h2 class="section-title">Screenshots &amp; Ansichten</h2>
+            <p class="section-subtitle">
+              Alle offiziellen App-Store-Ansichten für iPhone und iPad – klicken Sie auf ein Bild für die Vollansicht.
+            </p>
+          </div>
+
+          <div class="gallery-controls">
+            <div class="filter-bar" role="group" aria-label="Geräteansicht wählen">
+              <button class="filter-pill" type="button" data-gallery-tab="iphone" aria-pressed="true">
+                <span>iPhone</span>
+                <span class="filter-count">7</span>
+              </button>
+              <button class="filter-pill" type="button" data-gallery-tab="ipad" aria-pressed="false">
+                <span>iPad</span>
+                <span class="filter-count">4</span>
+              </button>
+            </div>
+            <div class="rail-arrows">
+              <button id="rail-prev" class="rail-arrow" type="button" aria-label="Vorherige Screenshots">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6" /></svg>
+              </button>
+              <button id="rail-next" class="rail-arrow" type="button" aria-label="Nächste Screenshots">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6" /></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- iPhone Screenshots -->
+        <div class="screenshot-rail" data-gallery-rail="iphone">
+          <figure class="screenshot-card">
+            <button class="screenshot-thumb" type="button" data-lightbox-src="../assets/apps/gartenplaner/iphone-1.png" data-lightbox-caption="Detailansicht pro Gemüsesorte: Aussaat, Standort, Pflanzabstand sowie gute und schlechte Nachbarn">
+              <img src="../assets/apps/gartenplaner/iphone-1.png" alt="Gartenplaner Sortenansicht Tomate" loading="lazy" />
+            </button>
+            <figcaption class="screenshot-caption">
+              <strong>Sorten-Steckbrief</strong>
+              Aussaat, Standort, Abstand sowie gute und schlechte Nachbarn mit Hinweis-Tipps.
+            </figcaption>
+          </figure>
+
+          <figure class="screenshot-card">
+            <button class="screenshot-thumb" type="button" data-lightbox-src="../assets/apps/gartenplaner/iphone-2.png" data-lightbox-caption="Virtueller Beetplan: Gemüsesorten frei im Maßstab platzieren und Nachbarschaften direkt prüfen">
+              <img src="../assets/apps/gartenplaner/iphone-2.png" alt="Gartenplaner virtueller Beetplan" loading="lazy" />
+            </button>
+            <figcaption class="screenshot-caption">
+              <strong>Virtueller Beetplan</strong>
+              Sorten frei anordnen – Abstände und Verträglichkeit werden live angezeigt.
+            </figcaption>
+          </figure>
+
+          <figure class="screenshot-card">
+            <button class="screenshot-thumb" type="button" data-lightbox-src="../assets/apps/gartenplaner/iphone-3.png" data-lightbox-caption="Gemüseliste: Alle Sorten mit Aussaat-Zeitraum auf einen Blick">
+              <img src="../assets/apps/gartenplaner/iphone-3.png" alt="Gartenplaner Gemüseliste" loading="lazy" />
+            </button>
+            <figcaption class="screenshot-caption">
+              <strong>Gemüseliste</strong>
+              Schnelle Suche und direkte Übersicht über den jeweiligen Aussaat-Zeitraum.
+            </figcaption>
+          </figure>
+
+          <figure class="screenshot-card">
+            <button class="screenshot-thumb" type="button" data-lightbox-src="../assets/apps/gartenplaner/iphone-4.png" data-lightbox-caption="Mein Gemüse: Auswahl für die nächste Saison inklusive Wurzeltiefe">
+              <img src="../assets/apps/gartenplaner/iphone-4.png" alt="Gartenplaner Auswahl Mein Gemüse" loading="lazy" />
+            </button>
+            <figcaption class="screenshot-caption">
+              <strong>Mein Gemüse &amp; Wurzeltiefe</strong>
+              Ausgewählte Sorten nach Flach-, Mittel- und Tiefwurzlern sortieren.
+            </figcaption>
+          </figure>
+
+          <figure class="screenshot-card">
+            <button class="screenshot-thumb" type="button" data-lightbox-src="../assets/apps/gartenplaner/iphone-5.png" data-lightbox-caption="Nachbarn-Übersicht: Alle Wechselwirkungen zwischen Ihren gewählten Sorten auf einen Blick">
+              <img src="../assets/apps/gartenplaner/iphone-5.png" alt="Gartenplaner Nachbarn Matrix" loading="lazy" />
+            </button>
+            <figcaption class="screenshot-caption">
+              <strong>Nachbarn-Matrix</strong>
+              Wechselbeziehungen und konkrete Tipps für ideale Mischkulturen.
+            </figcaption>
+          </figure>
+
+          <figure class="screenshot-card">
+            <button class="screenshot-thumb" type="button" data-lightbox-src="../assets/apps/gartenplaner/iphone-6.png" data-lightbox-caption="Aussaat- und Erntekalender über alle zwölf Monate">
+              <img src="../assets/apps/gartenplaner/iphone-6.png" alt="Gartenplaner Aussaat- und Erntekalender" loading="lazy" />
+            </button>
+            <figcaption class="screenshot-caption">
+              <strong>Aussaat- &amp; Erntekalender</strong>
+              Monatliche Balkenansicht für alle ausgewählten Gemüsesorten.
+            </figcaption>
+          </figure>
+
+          <figure class="screenshot-card">
+            <button class="screenshot-thumb" type="button" data-lightbox-src="../assets/apps/gartenplaner/iphone-7.png" data-lightbox-caption="Fruchtfolge-Warnung im Beetplan bei aufeinanderfolgenden Starkzehrern">
+              <img src="../assets/apps/gartenplaner/iphone-7.png" alt="Gartenplaner Fruchtfolge Warnung" loading="lazy" />
+            </button>
+            <figcaption class="screenshot-caption">
+              <strong>Fruchtfolge-Warnung</strong>
+              Warnt Sie automatisch, wenn zwei Starkzehrer auf demselben Platz folgen.
+            </figcaption>
+          </figure>
+        </div>
+
+        <!-- iPad Screenshots -->
+        <div class="screenshot-rail" data-gallery-rail="ipad" hidden>
+          <figure class="screenshot-card screenshot-card--ipad">
+            <button class="screenshot-thumb" type="button" data-lightbox-src="../assets/apps/gartenplaner/ipad-1.png" data-lightbox-caption="iPad-Splitscreen: Gemüseliste links und vollständiger Sorten-Steckbrief rechts">
+              <img src="../assets/apps/gartenplaner/ipad-1.png" alt="Gartenplaner iPad Ansicht Tomate" loading="lazy" />
+            </button>
+            <figcaption class="screenshot-caption">
+              <strong>iPad-Detailansicht</strong>
+              Gemüseliste und Sorten-Steckbrief komfortabel nebeneinander.
+            </figcaption>
+          </figure>
+
+          <figure class="screenshot-card screenshot-card--ipad">
+            <button class="screenshot-thumb" type="button" data-lightbox-src="../assets/apps/gartenplaner/ipad-2.png" data-lightbox-caption="iPad-Kalender: Aussaat- und Erntezeiten im großen Jahresüberblick">
+              <img src="../assets/apps/gartenplaner/ipad-2.png" alt="Gartenplaner iPad Kalender" loading="lazy" />
+            </button>
+            <figcaption class="screenshot-caption">
+              <strong>Großer Jahreskalender</strong>
+              Alle Aussaat- und Erntezeiträume Ihres gesamten Gartens im Querformat.
+            </figcaption>
+          </figure>
+
+          <figure class="screenshot-card screenshot-card--ipad">
+            <button class="screenshot-thumb" type="button" data-lightbox-src="../assets/apps/gartenplaner/ipad-3.png" data-lightbox-caption="iPad-Beetplan: Großzügige Zeichenfläche für maßstabsgetreue Gemüsebeete">
+              <img src="../assets/apps/gartenplaner/ipad-3.png" alt="Gartenplaner iPad Beetplan" loading="lazy" />
+            </button>
+            <figcaption class="screenshot-caption">
+              <strong>Beetplan auf dem iPad</strong>
+              Großzügiger Überblick über Beete, Maße und Nachbarschaftslinien.
+            </figcaption>
+          </figure>
+
+          <figure class="screenshot-card screenshot-card--ipad">
+            <button class="screenshot-thumb" type="button" data-lightbox-src="../assets/apps/gartenplaner/ipad-4.png" data-lightbox-caption="iPad-Nachbarn-Übersicht: Vollständige Mischkultur-Matrix auf einen Blick">
+              <img src="../assets/apps/gartenplaner/ipad-4.png" alt="Gartenplaner iPad Nachbarn Matrix" loading="lazy" />
+            </button>
+            <figcaption class="screenshot-caption">
+              <strong>Mischkultur-Matrix</strong>
+              Verträglichkeit aller Sorten übersichtlich im Querformat prüfen.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Structured Features -->
+    <section id="funktionen" class="section" style="padding-top: 1rem;">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-heading-group">
+            <p class="section-eyebrow">Funktionsumfang</p>
+            <h2 class="section-title">Durchdacht für Ihr Gemüsebeet</h2>
+            <p class="section-subtitle">
+              Durch den kostenlosen Download können Sie vor dem Kauf direkt erkunden, was Ihnen die App bietet.
+            </p>
+          </div>
+        </div>
+
+        <div class="app-features-grid">
+          <article class="app-feature-card reveal">
+            <div class="app-feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22v-7" /><path d="M9 11a4 4 0 0 1 6 0" /><path d="M5 7c2 0 4 1.5 7 5 3-3.5 5-5 7-5 0 4.5-2.5 7.5-7 8-4.5-.5-7-3.5-7-8Z" /></svg>
+            </div>
+            <h3 class="app-feature-title">Mischkultur &amp; Nachbarn</h3>
+            <p class="app-feature-text">
+              Zu jeder Gemüsesorte sehen Sie gute und schlechte Nachbarn. In der Nachbarn-Übersicht erkennen Sie auf einen Blick alle Wechselbeziehungen zwischen Ihren gewählten Sorten.
+            </p>
+          </article>
+
+          <article class="app-feature-card reveal">
+            <div class="app-feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" /><path d="M16 2v4" /><path d="M8 2v4" /><path d="M3 10h18" /></svg>
+            </div>
+            <h3 class="app-feature-title">Aussaat- &amp; Erntekalender</h3>
+            <p class="app-feature-text">
+              Im übersichtlichen Kalender sehen Sie sofort, welches Gemüse wann vorgezogen oder ausgesät werden muss und ab welchem Monat Sie ernten können.
+            </p>
+          </article>
+
+          <article class="app-feature-card reveal">
+            <div class="app-feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" /><path d="M3 9h18" /><path d="M9 21V9" /></svg>
+            </div>
+            <h3 class="app-feature-title">Virtueller Beetplan</h3>
+            <p class="app-feature-text">
+              Als freischaltbare Bonusfunktion legen Sie Ihr Beet virtuell an und ordnen Sorten frei an – inklusive passender Pflanzabstände und Live-Anzeige guter und schlechter Nachbarn.
+            </p>
+          </article>
+
+          <article class="app-feature-card app-feature-card--wide reveal">
+            <div class="app-feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z" /><path d="M12 9v4" /><path d="M12 17h.01" /></svg>
+            </div>
+            <h3 class="app-feature-title">Fruchtfolge-Hinweise</h3>
+            <p class="app-feature-text">
+              Die App warnt Sie bei problematischen Fruchtfolgen, etwa wenn zwei Starkzehrer in zwei aufeinanderfolgenden Jahren am selben Standort im Beet platziert werden.
+            </p>
+          </article>
+
+          <article class="app-feature-card reveal">
+            <div class="app-feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9" /><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z" /></svg>
+            </div>
+            <h3 class="app-feature-title">Aktuelles Update (v1.36)</h3>
+            <ul class="app-feature-list">
+              <li><span class="app-feature-bullet"></span><span>Ihre Beetliste lässt sich flexibel umsortieren</span></li>
+              <li><span class="app-feature-bullet"></span><span>Direktes Antippen einer Nachbarpflanze öffnet deren Detailseite</span></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Specs -->
+    <section id="details" class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="specs-card reveal">
+          <p class="section-eyebrow">App Store Spezifikationen</p>
+          <h2 class="section-title" style="font-size: clamp(1.5rem, 2.8vw, 2rem); margin-bottom: 1.5rem;">Informationen auf einen Blick</h2>
+
+          <div class="specs-grid">
+            <div class="spec-item">
+              <span class="spec-label">Anbieter</span>
+              <span class="spec-value">Bento Software UG</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Kategorie</span>
+              <span class="spec-value">Lifestyle &amp; Nachschlagewerke</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Preis</span>
+              <span class="spec-value">Gratis (In-App-Bonusfunktion)</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Bewertung</span>
+              <span class="spec-value">★ 4,5 (2.968 Bewertungen)</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Aktuelle Version</span>
+              <span class="spec-value">1.36</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Dateigröße (iOS)</span>
+              <span class="spec-value">19,0 MB</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Kompatibilität</span>
+              <span class="spec-value">iPhone &amp; iPad (ab iOS 15.0) · Android</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Sprachen</span>
+              <span class="spec-value">Deutsch, Englisch, Französisch, Spanisch</span>
+            </div>
+          </div>
+
+          <div class="specs-links">
+            <a class="inline-link" href="../index.html#kontakt">Support &amp; Kontakt</a>
+            <a class="inline-link" href="../index.html#datenschutz">Datenschutzerklärung</a>
+            <a class="inline-link" href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener noreferrer">Apple Standard-EULA</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cross Navigation -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <h2 class="section-title" style="font-size: clamp(1.5rem, 2.5vw, 1.9rem); margin-bottom: 1.25rem;">Weitere Apps von Bento Software</h2>
+        <div class="more-apps-grid">
+          <a class="more-app-card" href="heilkraeuter.html">
+            <div class="more-app-icon"><img src="../assets/apps/heilkraeuter/icon.jpg" alt="" loading="lazy" /></div>
+            <div class="more-app-meta">
+              <span>Gesundheit &amp; Natur</span>
+              <strong>Heilkräuter Info</strong>
+              <small>App entdecken →</small>
+            </div>
+          </a>
+          <a class="more-app-card" href="../cyclecontext/de/index.html">
+            <div class="more-app-icon"><img src="../assets/apps/cyclecontext/icon.jpg" alt="" loading="lazy" /></div>
+            <div class="more-app-meta">
+              <span>Gesundheit &amp; Orientierung</span>
+              <strong>CycleContext</strong>
+              <small>Projektseite öffnen →</small>
+            </div>
+          </a>
+          <a class="more-app-card" href="kreditrechner.html">
+            <div class="more-app-icon"><img src="../assets/apps/kreditrechner/icon.jpg" alt="" loading="lazy" /></div>
+            <div class="more-app-meta">
+              <span>Finanzen &amp; Immobilien</span>
+              <strong>Kreditrechner &amp; Tilgung</strong>
+              <small>App entdecken →</small>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <a class="brand" href="../index.html">
+            <img class="brand-mark" src="../favicon.svg" width="28" height="28" alt="" />
+            <span class="brand-wordmark"><strong>BENTO</strong><span>SOFTWARE</span></span>
+          </a>
+          <p class="footer-tagline">Software, die ihr Ziel erreicht.</p>
+        </div>
+        <div class="footer-links">
+          <a class="footer-link" href="../index.html#produkte">Alle Produkte</a>
+          <a class="footer-link" href="../index.html#dienstleistungen">Dienstleistungen</a>
+          <a class="footer-link" href="../index.html#kontakt">Kontakt &amp; Impressum</a>
+          <a class="footer-link" href="../index.html#datenschutz">Datenschutzerklärung</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Bento Software UG (haftungsbeschränkt). Alle Rechte vorbehalten.</span>
+        <span>Hessestr. 12 · 32049 Herford</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Screenshot-Vollansicht" aria-hidden="true">
+    <div class="lightbox-backdrop" data-close-lightbox></div>
+    <div class="lightbox-dialog">
+      <div class="lightbox-stage">
+        <button id="lightbox-prev" class="lightbox-btn lightbox-btn--nav lightbox-prev" type="button" aria-label="Vorheriges Bild">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6" /></svg>
+        </button>
+        <img id="lightbox-img" class="lightbox-img" src="" alt="" />
+        <button id="lightbox-next" class="lightbox-btn lightbox-btn--nav lightbox-next" type="button" aria-label="Nächstes Bild">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6" /></svg>
+        </button>
+        <button class="lightbox-btn lightbox-close" type="button" data-close-lightbox aria-label="Vollansicht schließen">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg>
+        </button>
+      </div>
+      <div class="lightbox-caption-bar">
+        <span id="lightbox-counter" class="lightbox-counter">1 / 7</span>
+        <span id="lightbox-caption"></span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
