@@ -666,6 +666,7 @@ ul {
 }
 
 .flagship-main {
+  min-width: 0;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -1778,7 +1779,7 @@ ul {
   }
 
   .flagship-split {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .feature-list--grid {
@@ -1927,3 +1928,5 @@ ul {
   .bento-home .cta-banner-actions .btn { justify-content: center; }
   .bento-home .footer-word { font-size: clamp(2rem,10vw,5rem); }
 }
+
+.app-platforms { font-size: 0.875rem; font-weight: 600; color: var(--ink-secondary); }
